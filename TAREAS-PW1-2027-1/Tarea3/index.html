@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ETIQUETAS SEMÁNTICAS Y DE FORMATO DE TEXTO 2</title>
+    <meta name="author" content="Estrella Montiel Lemus">
+    <meta name="keywords" content="HTML, METADATOS, FUNDAMENTOS">
+</head>
+<body>
+    <h2>Cómo citar semántica en HTML</h2>
+    
+    <!-- CITAS CORTAS -->
+    <p>Como dijo un sabio: "yo solo sé que no sé nada" -sabio</p>
+    <p>Como dijo un sabio: <q>yo solo sé que no sé nada</q> -sabio</p>
+
+    <!-- CITAS LARGAS -->
+    <p>Como dijo un sabio</p>
+    <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad amet beatae dicta dolores eos est in iusto laborum minima necessitatibus.
+    </blockquote>
+    <p>-Sabio</p>
+    
+    <p>Y otro dijo</p>
+    <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </blockquote>
+
+    <hr>
+
+    <h2>SALTOS HORIZONTALES</h2>
+    <p>Este es el primer párrafo <br><br> este es el segundo párrafo <br> este es el tercer párrafo</p>
+
+    <hr>
+
+    <h2>Visualización formato y código</h2>
+    <p>Cuando nosotros implementamos <code>print("hola mundo")</code> en python, la salida en consola será : <code>"hola mundo"</code></p>
+    
+    <h3>Visualización de código de varias líneas</h3>
+    <p>Este programa suma dos líneas en python</p>
+    
+    <pre>
+        #Suma de dos números
+        a = 5
+        b = 6
+        print(a + b)
+    </pre>
+
+    <!-- Este código imprime un hola mundo en html para escribir caracteres especiales como <> se utiliza entidades html que permite avisar al navegador que vamos a utilizar un símbolo especial -->
+    <pre>
+        &lt;body&gt;
+            &lt;h1&gt;HOLA MUNDO&lt;/h1&gt;
+        &lt;/body&gt;
+    </pre>
+
+    <hr>
+
+    <p>
+        Para representar la entrada del teclado (teclas) 
+        se utiliza la etiqueta <code>&lt;kbd&gt;&lt;/kbd&gt;</code>
+    </p>
+    <p>Para copiar texto de un archivo, utilizamos una combinación de teclas <kbd>CTRL</kbd>+<kbd>C</kbd></p>
+</body>
+</html>
