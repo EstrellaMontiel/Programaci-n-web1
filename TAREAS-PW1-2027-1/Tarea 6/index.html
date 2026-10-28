@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="">
+    <meta name="viewport" content="width=, user-scalable=, initial-scale=, maximum-scale=, minimum-scale=">
+    <meta http-equiv="X-UA-Compatible" content="ie=">
+    <title>Listas y formularios HTML</title>
+</head>
+<body>
+    <h1> Listas y formularios</h1>
+<div>
+    <h2>Listas</h2>
+    <h3>Listas no ordenadas</h3>
+    <ul>
+        <li>Leche</li>
+        <li>Jamon</li>
+        <li>Carne</li>
+        <li>Pan</li>
+        <li>Huevo</li>
+    </ul>
+    <h3>Listas ordenadas</h3>
+    <ol type="Ii" start="10" reversed="14">
+        <li>Catorceavo</li>
+        <li>Treceavo</li>
+        <li>Doceavo</li>
+        <li>Onceavo</li>
+        <li>Decimo</li>
+    </ol>
+    <h3>Listas de definiciones</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado de hipertexto</dd>
+        <dt>css</dt>
+        <dd>Hoja de estilos de cascada</dd>
+        <dt>JS</dt>
+        <dd>Java script</dd>
+    </dl>
+    
+    <h3>Listas anidadas</h3>
+    <p>Desarrollo web</p>
+    <ul>
+        <li>Front-End</li>
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+        <li>Back-End
+        <ol type="A">
+            <li>NodeJS</li>
+            <li>MySQL</li>
+            <li>ArchLinux</li>
+        </ol>
+        </li>
+    </ul>
+</div>
+    <hr>
+<div>
+    <h2>Formularios</h2>
+    <h3>Formulario de inicio de sesion</h3>
+    <form action="/inicio_sesión" method="get">
+        <label for="username">Nombre de usuario</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Contraseña
+            <input type="password" id="password" name="password" placeholder="Tu constraseña debe tener numeros y letras"required>
+        </label>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancel</button>
+    </form>
+
+</div>
+</body>
+</html>
