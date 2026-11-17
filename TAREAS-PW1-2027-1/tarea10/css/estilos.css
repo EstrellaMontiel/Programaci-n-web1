@@ -21,12 +21,20 @@
     */
     background-attachment: fixed;
 
+    /* Shorthand background: combina el gradiente, la imagen, posición, tamaño, repetición y fijación */
+    background: linear-gradient(to top, rgba(238, 130, 238, 0.516), rgba(238, 130, 238, 0.516)), 
+                url("../imagenes/freddy.jpg") center / cover no-repeat fixed;
+
     /* Propiedades generales del contenedor */
     width: 3000px;
     height: 600px;
 }
 
 .fondo-conjuro {
+
+   /* Shorthand background: combina la imagen, posición, tamaño, repetición y fijación
+    background: url("../imagenes/conjuro.jpg") center / cover no-repeat fixed;*/
+
     background-image: url("../imagenes/conjuro.jpg");
     background-size: cover;
     background-repeat: no-repeat;
