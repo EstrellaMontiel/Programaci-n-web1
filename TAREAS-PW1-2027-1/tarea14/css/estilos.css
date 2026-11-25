@@ -1,12 +1,12 @@
 html {
-    font-size: 10px; /* 1rem = 10px */
+    font-size: 10px;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to bottom, black, rgb(44,0 , 0));
+    background-image: linear-gradient(to bottom, black, rgb(44, 0, 0));
     color: orange;
 }
 
@@ -17,29 +17,29 @@ body {
     width: 100%;
     z-index: 5;
     top: 0;
-
+    background-color: black;
+    box-sizing: border-box;
 }
 
 .logo {
     border: 0.2rem solid greenyellow;
     border-radius: 45%;
     width: 20%;
-    height: 30rem;
-  }
+    height: 15rem;
+}
 
 .logo img {
     width: 100%;
     height: 100%;
     border-radius: 45%;
-
 }
 
 #encabezado h1 {
     text-align: center;
     text-shadow: 0.2rem 0.2rem 0.5rem indigo;
     position: absolute;
-    top: 10rem;
-    left: 30%;
+    top: 3rem;
+    left: 25%;
 }
 
 #navegacion ul {
@@ -47,14 +47,14 @@ body {
     padding-left: 0;
     position: absolute;
     top: 25%;
-    right: 10%;
-    border: 0.2 rem solid red;
+    right: 5%;
+    border: 0.2rem solid red;
     width: 20%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
-#navegacion ul li{
+#navegacion ul li {
     display: inline-block;
 }
 
@@ -63,20 +63,23 @@ body {
     padding: 1rem;
     height: 200rem;
     position: relative;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70rem 1fr;
+    align-items: start;
 }
 
 .imagen {
     border: 0.2rem solid yellow;
     width: 40rem;
-    height: 50rem;
+    height: 25rem;
     margin: 0.5rem;
     position: sticky;
-    top: 15rem;
-    
+    top: 16rem;
+    justify-self: start;
 }
-.imagen img{
 
+.imagen img {
     width: 100%;
     height: 100%;
 }
@@ -84,15 +87,14 @@ body {
 .imagen1 {
     border: 0.2rem solid royalblue;
     width: 40rem;
-    height: 50rem;
+    height: 25rem;
     margin: 0.5rem;
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
-    z-index: 2;
+    position: sticky;
+    top: 16rem;
+    justify-self: end;
 }
-.imagen1 img{
 
+.imagen1 img {
     width: 100%;
     height: 100%;
 }
@@ -100,17 +102,14 @@ body {
 .imagen2 {
     border: 0.2rem solid salmon;
     width: 40rem;
-    height: 50rem;
+    height: 25rem;
     margin: 0.5rem;
-    position: absolute;
-    bottom: 0rem;
-    left: 0rem;
-    z-index: 2;
-
+    position: sticky;
+    top: 43rem;
+    justify-self: start;
 }
 
-.imagen2 img{
-
+.imagen2 img {
     width: 100%;
     height: 100%;
 }
@@ -118,41 +117,66 @@ body {
 .imagen3 {
     border: 0.2rem solid salmon;
     width: 40rem;
-    height: 50rem;
+    height: 25rem;
     margin: 0.5rem;
-    position: absolute;
-    bottom: 0rem;
-    left: 0rem;
-
+    position: sticky;
+    top: 43rem;
+    justify-self: end;
 }
 
-.imagen3 img{
-
+.imagen3 img {
     width: 100%;
     height: 100%;
 }
 
-/*consultas a medios medias queries)
-sirve para definir los estilos a elementos HTML. segun eñ tamaño
-de la pantalla de nuestro dispositivo, graacias a esra se posiciona una herramienta que nos sirve para la 
-creacion de paginas responsivas o adaptables 
-si se definen varias consultas de medios, se deben poner en forma descendente segun la medida del dipositivo
-moviles (480px), tabletts (480-960px), pc(960px-120px)*/
-
-@media  and (max-width:1250px) {
+@media screen and (max-width: 1250px) {
 
     #encabezado h1 {
-    left: 25%;
-    font-size: 3rem;
+        left: 25%;
+        font-size: 3rem;
+    }
+
+    .imagen,
+    .imagen1,
+    .imagen2,
+    .imagen3 {
+        width: 90%;
+        max-width: 40rem;
+    }
 }
 
-.logo {
-   
-    height: 27rem;
-  }
+@media screen and (max-width: 960px) {
 
-.logo {
-   
-    height: 22rem;
-  }
+    #encabezado h1 {
+        font-size: 2rem;
+    }
+
+    #navegacion ul {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #encabezado h1 {
+        font-size: 1.5rem;
+        top: 0;
+    }
+
+    #navegacion ul {
+        width: 60%;
+        top: 40%;
+    }
+
+    .imagen,
+    .imagen1,
+    .imagen2,
+    .imagen3 {
+        height: 15rem;
+    }
+
+    .imagen2,
+    .imagen3 {
+        top: 33rem;
+    }
 }
